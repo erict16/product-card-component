@@ -12,6 +12,19 @@
 h1 {
     font-family: 'Fraunces', serif;
     font-weight: 700;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    color: var(--primary-color);
+    font-size: 32px;
+
+}
+
+h3 {
+    color: var(--dark-blue);
+    font-size: 14px;
 }
 
 
@@ -25,25 +38,19 @@ h1 {
 /* */
 body {
     height: 100vh;
-    font-size: 14px;
+    font-size: 11px;
     font-family: "Montserrat", sans-serif;
     background-color: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /*border: solid;*/
-}
-
-main {
-    /*border: dotted;*/
 }
 
 /* Class */
 .container {
     border-radius: 10px;
     background-color: white;
-    /*border: dotted;*/
     overflow: hidden; /* hide the overflow part */
 }
 
@@ -58,6 +65,11 @@ main {
     color: var(--dark-blue)
 }
 
+.product-info p {
+    color: var(--dark-blue);
+    /*font-size: 14px;*/
+}
+
 
 /* Desktop view */
 @media (min-width: 700px) {
@@ -66,10 +78,20 @@ main {
         display: flex;
     }
 
+    .product-info p {
+        line-height: 1.2rem;
+    }
+
+    .product-info h1 {
+        line-height: 2rem;
+    }
+
     .hero-image {
         content: url("images/image-product-desktop.jpg");
         width: 300px;
     }
+
+
 
 }
 
