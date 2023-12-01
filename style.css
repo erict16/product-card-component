@@ -8,20 +8,65 @@
 }
 
 /* Typography */
-body {
+
+/* Class */
+
+* {
     margin: 0;
-    height: 100vh;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    height: 100vh;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     border: solid;
 }
 
 main {
+    /*border: dotted;*/
+}
+
+/* Class */
+.round-card {
+    border-radius: 20px;
+    background-color: white;
     border: dotted;
+    overflow: hidden; /* hide the overflow part */
+}
+
+
+/* Desktop view */
+@media (min-width: 700px) {
+    .hero-image {
+        width: 100%;
+        height: 300px;
+        background-image: url("images/image-product-desktop.jpg");
+        background-size: cover;
+    }
+
+    .round-card {
+        width: 600px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 700px) {
+    .hero-image {
+        width: 100%;
+        height: 240px;
+        background-image: url("images/image-product-mobile.jpg");
+        background-size: cover;
+        background-color: #eee; /* Fallback color */
+    }
+
+    .round-card {
+        width: 340px;
+    }
 }
