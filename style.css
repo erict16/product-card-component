@@ -122,8 +122,11 @@ button img {
 @media (max-width: 700px) {
     .container {
         width: 360px;
-        height: 600px;
         flex-direction: column;
+    }
+
+    .product-info {
+        height: 380px;
     }
 
     .hero-image {
