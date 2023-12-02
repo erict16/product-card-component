@@ -25,6 +25,9 @@ h2 {
 h3 {
     color: var(--dark-blue);
     font-size: 14px;
+    text-decoration: line-through;
+    margin-left: 15px;
+    font-weight: 500;
 }
 
 
@@ -47,6 +50,10 @@ body {
     flex-direction: column;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* Class */
 .container {
     border-radius: 10px;
@@ -56,6 +63,9 @@ body {
 
 .product-info {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-tag {
@@ -65,10 +75,16 @@ body {
     color: var(--dark-blue)
 }
 
+.price-tag {
+    display: flex;
+    align-items: center;
+}
+
 .product-info p {
     color: var(--dark-blue);
-    /*font-size: 14px;*/
+    font-size: 14px;
 }
+
 
 
 /* Desktop view */
