@@ -105,18 +105,17 @@ button img {
 }
 
 /* Desktop view */
-@media (min-width: 700px) {
-    .container {
-        width: 600px;
-        display: flex;
-    }
-
-    .hero-image {
-        content: url("images/image-product-desktop.jpg");
-        width: 300px;
-    }
-
+.container {
+    width: 600px;
+    display: flex;
 }
+
+.hero-image {
+    content: url("images/image-product-desktop.jpg");
+    width: 300px;
+}
+
+
 
 /* Mobile view */
 @media (max-width: 700px) {
